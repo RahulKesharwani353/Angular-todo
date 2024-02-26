@@ -1,1 +1,4 @@
-<p>important-task works!</p>
+<app-task-title></app-task-title>
+<div class="flex flex-col mt-6">
+    <app-task-list [taskList]="taskList" (complete)="onComplete($event)" (important)="onImportant($event)"></app-task-list>
+</div>

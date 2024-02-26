@@ -3,11 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpService } from '../../../services/http.service';
 import { TaskListComponent } from '../task-list/task-list.component';
 import { StateService } from '../../../services/state.service';
+import { TaskTitleComponent } from '../task-title/task-title.component';
 
 @Component({
   selector: 'app-all-task',
   standalone: true,
-  imports: [FormsModule, TaskListComponent],
+  imports: [FormsModule, TaskListComponent, TaskTitleComponent],
   templateUrl: './all-task.component.html',
   styleUrl: './all-task.component.scss'
 })
