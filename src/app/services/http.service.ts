@@ -20,4 +20,7 @@ export class HttpService {
   updateTask(task:any){
     return this.httpClient.put("http://localhost:3000/tasks/"+task.id,task)
   }
+  deleteTask(task:any){
+    return this.httpClient.delete("http://localhost:3000/tasks/"+task.id,task)
+  }
 }
